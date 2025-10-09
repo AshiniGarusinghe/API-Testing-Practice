@@ -1,0 +1,341 @@
+{
+	"info": {
+		"_postman_id": "1382b681-dee9-4a2d-987a-f44c5ee3dea8",
+		"name": "StudentAPIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "47511542",
+		"_collection_link": "https://ashinigarusinghe740-519542.postman.co/workspace/NewMyWork~786ef6da-3dc0-450a-a84b-63193d7f6863/collection/47511542-1382b681-dee9-4a2d-987a-f44c5ee3dea8?action=share&source=collection_link&creator=47511542"
+	},
+	"item": [
+		{
+			"name": "Get All Student Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/students",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Single Student Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/students/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"students",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create New Student",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"John\",\r\n    \"location\": \"India\",\r\n    \"phone\": \"+91 12345 67890\",\r\n    \"courses\": [\r\n        \"Java\",\r\n        \"Selenium\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/students",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"students"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"John\",\r\n    \"location\": \"India\",\r\n    \"phone\": \"+91 12345 67890\",\r\n    \"courses\": [\r\n        \"Java\",\r\n        \"Selenium\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/students",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"students"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "tinyhttp"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, HEAD, PUT, PATCH, POST, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "content-type"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 09 Oct 2025 03:15:33 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						},
+						{
+							"key": "Content-Length",
+							"value": "136"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"09ca\",\n    \"name\": \"John\",\n    \"location\": \"India\",\n    \"phone\": \"+91 12345 67890\",\n    \"courses\": [\n        \"Java\",\n        \"Selenium\"\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Jon\",\r\n    \"location\": \"India\",\r\n    \"phone\": \"+91 12345 67890\",\r\n    \"courses\": [\r\n        \"Java\",\r\n        \"Selenium\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/students/9242",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"students",
+						"9242"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Jon\",\r\n    \"location\": \"India\",\r\n    \"phone\": \"+91 12345 67890\",\r\n    \"courses\": [\r\n        \"Java\",\r\n        \"Selenium\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/students/09ca",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"students",
+								"09ca"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "tinyhttp"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, HEAD, PUT, PATCH, POST, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "content-type"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 09 Oct 2025 03:16:26 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						},
+						{
+							"key": "Content-Length",
+							"value": "135"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"Jon\",\n    \"location\": \"India\",\n    \"phone\": \"+91 12345 67890\",\n    \"courses\": [\n        \"Java\",\n        \"Selenium\"\n    ],\n    \"id\": \"09ca\"\n}"
+				}
+			]
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Jon\",\r\n    \"location\": \"India\",\r\n    \"phone\": \"+91 12345 67890\",\r\n    \"courses\": [\r\n        \"Java\",\r\n        \"Selenium\"\r\n    ]\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/students/09ca",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"students",
+						"09ca"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Jon\",\r\n    \"location\": \"India\",\r\n    \"phone\": \"+91 12345 67890\",\r\n    \"courses\": [\r\n        \"Java\",\r\n        \"Selenium\"\r\n    ]\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/students/09ca",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"students",
+								"09ca"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "tinyhttp"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, HEAD, PUT, PATCH, POST, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "content-type"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 09 Oct 2025 03:17:18 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						},
+						{
+							"key": "Content-Length",
+							"value": "135"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"Jon\",\n    \"location\": \"India\",\n    \"phone\": \"+91 12345 67890\",\n    \"courses\": [\n        \"Java\",\n        \"Selenium\"\n    ],\n    \"id\": \"09ca\"\n}"
+				}
+			]
+		}
+	]
+}
